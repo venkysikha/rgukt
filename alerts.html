@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alerts in bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <h1 class="bd-title ">Alerts </h1>
+    <p class="text-info">Provide contextual feedback messages for typical user
+         actions with the handful of available and flexible alert messages</p>
+    <div>
+    <h2> basic alerts</h2>
+    <div class= "alert alert-primary">
+        this is basic  primary alert box 
+    </div>
+    <div class="alert alert-secondary ">
+        this is basic secondary alert box
+    </div>
+    <div class="alert alert-success" >
+        A simple success alert—check it out!
+      </div>
+      <div class="alert alert-danger" >
+        A simple danger alert—check it out!
+      </div>
+      <div class="alert alert-warning" >
+        A simple warning alert—check it out!
+      </div>
+      <div class="alert alert-info" >
+        A simple info alert—check it out!
+      </div>
+      <div class="alert alert-light" >
+        A simple light alert—check it out!
+      </div>
+      <div class="alert alert-dark" >
+        A simple dark alert—check it out!
+       </div>
+    </div>
+    <div>
+        <h2>
+            Link color 
+        </h2>
+        <p class="text-danger">
+        Use the <b>"alert-link"</b>utility class to quickly
+         provide matching colored links within any alert
+         <br> example:
+         </p>
+         <div class="alert  alert-primary">
+            A simple <a href="#" class="alert-link" >primary alert</a> with an example link.
+         </div>
+         <div class="alert alert-danger">
+            a simple <a href="#" class="alert-link">danger alert</a> with an example link
+         </div>
+    </div>
+    <div>
+    <h2>
+        icons
+    </h2>
+    <p class="text-success"> 
+       we can also add the icons with alertts
+    </p>
+    <div class="alert alert-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height=" 25" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+            An example alert with an icon
+    </div>
+    </div>
+    <div>
+        <h2>Dismissable alerts</h2>
+        <p class="text-failure">we use the <b> alert-dismissible class 
+            for the dismiss label  </b></p>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Warning!</strong> This is a dismissible alert. Click the close icon to dismiss.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+    </div>
+
+    <div>
+        <h3> Example:</h3>
+        <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+       </div>
+    </div>
+    <script src="alert.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
